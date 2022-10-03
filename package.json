@@ -1,0 +1,23 @@
+{
+  "name": "pluma2",
+  "version": "1.0.0",
+  "description": "Testing technologies to develop ultra-light websites again. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss -i ./src/pluma.css -o ./dist/pluma.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toyeca/pluma2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toyeca/pluma2/issues"
+  },
+  "homepage": "https://github.com/toyeca/pluma2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
