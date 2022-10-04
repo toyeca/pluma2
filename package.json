@@ -1,23 +1,26 @@
 {
   "name": "pluma2",
-  "version": "1.0.0",
-  "description": "Testing technologies to develop ultra-light websites again. ",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "tailwindcss -i ./src/pluma.css -o ./dist/pluma.css --watch"
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/toyeca/pluma2.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/toyeca/pluma2/issues"
-  },
-  "homepage": "https://github.com/toyeca/pluma2#readme",
   "devDependencies": {
+    "@stencil-community/postcss": "^2.1.0",
+    "@stencil-community/router": "^1.0.2",
+    "@stencil/core": "2.13.0",
+    "@types/autoprefixer": "^10.2.0",
+    "@types/jest": "^27.0.3",
+    "autoprefixer": "^10.4.12",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "puppeteer": "^10.0.0",
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "license": "MIT"
 }
