@@ -14,15 +14,12 @@ export const config: Config = {
       type: 'www',
       // comment the following line to disable service workers in production
       serviceWorker: null,
-      baseUrl: 'https://myapp.local/',
+      baseUrl: 'https://www.alvaromayoral.com/',
     },
   ],
   plugins: [
     postcss({
-      plugins: [
-        autoprefixer(),
-        tailwind('./tailwind.config.js'),
-      ]
-    })
-  ]
+      plugins: [autoprefixer(), tailwind('./tailwind.config.js')],
+    }),
+  ],
 };
